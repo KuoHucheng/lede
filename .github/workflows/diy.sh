@@ -16,8 +16,8 @@ git clone -b 18.06  https://github.com/jerrykuku/luci-theme-argon
 cd ../../
 
 # Modify default IP
-sed -i 's/192.168.1.1/10.0.0.1/g' package/base-files/files/bin/config_generate
-sed -i 's/192.168/10.0/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/10.10.10.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168/10.10/g' package/base-files/files/bin/config_generate
 
 # Modify default Theme
 sed -i 's/bootstrap/argon/g' feeds/luci/modules/luci-base/root/etc/config/luci
